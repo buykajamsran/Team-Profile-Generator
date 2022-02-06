@@ -1,36 +1,36 @@
 const Employee = require('../lib/Employee');
 
-test("creates an employee object", () => {
+test("creates employee object", () => {
     const employee = new Employee("Buyka", 1, "buyka@gmail.com", "employee");
 
     expect(employee.name).toBe("Buyka");
-    expect(employee.id).toBe("1");
+    expect(employee.id).toBe(1);
     expect(employee.email).toBe("buyka@gmail.com"); 
-    expect(employee.role).toBe('employee');
+    expect(employee.role).toBe("Employee");
 });
 
 test("gets employee's name", () => {
     const employee = new Employee("Buyka", 1, "buyka@gmail.com", "employee");
 
-    expect(employee.getName()).toHaveProperty("name");
+    expect(employee.getName()).toHaveProperty('name');
 });
 
 test("gets employee's id", () => {
     const employee = new Employee("Buyka", 1, "buyka@gmail.com", "employee");
 
-    expect(employee.getId()).toHaveProperty("id");
+    expect(employee.getId()).toHaveProperty('id');
 });
 
 test("gets employee's email", () => {
     const employee = new Employee("Buyka", 1, "buyka@gmail.com", "employee");
 
-    expect(employee.getEmail()).toHaveProperty("email");
+    expect(employee.getEmail()).toHaveProperty('email');
 });
 
-test("gets employee's role as an object", () => {
+test("gets employee's role", () => {
     const employee = new Employee("Buyka", 1, "buyka@gmail.com", "employee");
 
-    expect(employee.getRole()).toHaveProperty("role");
+    expect(employee.getRole()).toHaveProperty('role');
 });
 
 // // WHEN I am prompted for my team members and their information
