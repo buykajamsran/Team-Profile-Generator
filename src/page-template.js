@@ -1,4 +1,4 @@
-const generateEmployeeCards = employeesArray => {
+const generateEmployeesCards = employeesArray => {
     return `
         <section class='row-cards'>
             <div class='col'>
@@ -50,7 +50,7 @@ module.exports = templateData => {
     </head>
     <body>
         <header>
-            <h1></h1>
+            <h1>Team Profile Generator</h1>
         </header>
         <main class="container">
             ${generateEmployeesCards(templateData)}
